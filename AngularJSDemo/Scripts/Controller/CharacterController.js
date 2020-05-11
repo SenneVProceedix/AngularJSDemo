@@ -5,6 +5,7 @@
     var CharacterController = function ($scope, $anchorScroll, $location, lotrApi) {
 
         var onCharacterSearchComplete = function (data) {
+            console.log(data);
             $scope.characters = data;
         };
 

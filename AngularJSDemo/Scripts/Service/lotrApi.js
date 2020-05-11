@@ -19,9 +19,20 @@
             });
         };
 
+        var getCharacter = function (id) {
+            return $http({
+                method: "GET",
+                url: "https://the-one-api.herokuapp.com/v1/character/" + id,
+                headers: { "Authorization": "Bearer U6nGivlOHF-lbiX0c2bA" }
+            }).then(function (response) {
+                return response.data;
+            });
+        }
+
         return {
             getBooks: getBooks,
-            getCharacters: getCharacters
+            getCharacters: getCharacters,
+            getCharacter: getCharacter
         };
     };
 

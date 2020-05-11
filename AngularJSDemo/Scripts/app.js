@@ -12,6 +12,10 @@
                 templateUrl: "character.html",
                 controller: "CharacterController"
             })
+            .when("/character/:id", {
+                templateUrl: "detail.html",
+                controller: "DetailController"
+            })
             .otherwise({ redirectTo: "/book" });
     });
 
