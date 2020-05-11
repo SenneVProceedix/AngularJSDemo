@@ -1,0 +1,12 @@
+﻿<div>
+    <h2>Books &emsp; {{counter}}</h2>
+    <ul>
+        <div ng-repeat="book in books">
+            <li>
+                <p>
+                    Book {{$index + 1}}: {{book.name | uppercase}}
+                </p>
+            </li>
+        </div>
+    </ul>
+</div>

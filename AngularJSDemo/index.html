@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>lotr</title>
+    <script src="Scripts/Angular/angular.js"></script>
+    <script src="Scripts/Angular/angular-route.js"></script>
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/Controller/BookController.js"></script>
+    <script src="Scripts/Controller/CharacterController.js"></script>
+    <script src="Scripts/Service/lotrApi.js"></script>
+</head>
+<body ng-app="lotr">
+    <nav>
+        <a href="#!/book">Books</a>
+        <a href="#!/character">Character</a>
+    </nav>
+    <h1>The Lord Of The Rings</h1>
+    <div ng-view></div>
+
+</body>
+</html>
